@@ -1,0 +1,70 @@
+.main-container{
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Item Details */
+.Item-details{
+    border: solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.con1{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.con2{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.blocks{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: darkgrey;
+}
+
+.item-box{
+    width: 150px;
+    height: 150px;
+    background-color: darkgrey;
+    margin: 10px;
+}
+.choose{
+    width: 200px;
+    height: 30px;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 5px;
+}
+.select{
+    width: 150px;
+    height: 30px;
+}
+
+/* Item LIst */
+.Item-list{
+    border: solid 1px;
+    border-radius: 10px;
+}
+

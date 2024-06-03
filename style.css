@@ -1,0 +1,61 @@
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#949494;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 10px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+
+.sidenav a:hover {
+  background-color:#b0b0b0;
+}
+.sidenav a:active {
+  background-color:#b0b0b0;
+}
+
+
+.main{
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* sales */
+.sales{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid-items{
+  width: 170px;
+  height: 70px;
+  border:2px solid;
+  border-radius: 7px;
+  margin-top: 20px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-evenly;
+}
