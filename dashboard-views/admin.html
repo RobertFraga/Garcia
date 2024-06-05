@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/design/admin.css">
     <title>Admin</title>
 </head>
 <body>
@@ -15,13 +16,31 @@
         <a href="/dashboard-views/transactions.html">Transactions</a>
         <a href="/dashboard-views/admin.html">Admin Profile</a>
     </div>
-
-
     
-    <div class="main">
-        <h2>Admins</h2>
-        <p>This sidebar is of full height (100%) and always shown.</p>
-        <p>Scroll down the page to see the result.</p>
+    <div class="outter-con">
+        <form class="inner-con">
+            <label for="main" style="margin-left: 100px; font-weight: bolder; color: rgb(255, 255, 255);;">Admin Setting</label><br>
+            <br>
+            <label for="username" style="color: rgb(255, 255, 255);">Username</label><br>
+            <input type="text" name="username" id="usernamen"><br>
+            <br>
+            <label for="password" style="color: rgb(255, 255, 255);">Current Password</label><br>
+            <input type="password" name="password" id="password"><br>
+            <br>
+            <label for="new-password" style="color: rgb(255, 255, 255);">New password</label><br>
+            <input type="password" name="new-password" id="new-password" ><br>
+            <br>
+            <label for="confirm-password" style="color: rgb(255, 255, 255);">Confirm password</label><br>
+            <input type="password" name="confirm-password" id="confirm-password">
+            <input type="checkbox" name="showpassword" id="showpassword" > 
+            <label for="showpassword" style="color: rgb(255, 255, 255);">Show password</label>
+            <br>
+            <br>
+            <input type="button" value="Confirm" style="font-weight: bold;"><br>
+        </form>
     </div>
+    
+</script>
+
 </body>
 </html>
