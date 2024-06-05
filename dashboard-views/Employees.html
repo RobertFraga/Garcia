@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/navbar.css">
     <link rel="stylesheet" href="/design/items.css">
+
+    <style>
+        .blocks{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
     <title>Employess</title>
 </head>
 <body>
@@ -28,16 +36,16 @@
             </div>
             <div class="con2">
                 <label class="Item-name" style="font-size: 15px; margin: 0; padding: 0;" >Name</label>
-                <label for="Item-name" class="blocks"></label>
+                <label for="Item-name" id="nameBlock" class="blocks" style="font-size: 15px;"></label>
     
                 <label class="Item-name" style="font-size: 15px; margin: 0; padding: 0;" >Username</label>
-                <label for="Item-name" class="blocks"></label>
+                <label for="Item-name" id="usernameBlock" class="blocks" style="font-size: 15px;"></label>
 
                 <label class="Item-name" style="font-size: 15px;  margin: 0; padding: 0;">Birth day</label>
-                <label for="Item-name" class="blocks"></label>
+                <label for="Item-name" id="bdayBlock" class="blocks" style="font-size: 15px;"></label>
 
                 <label class="Item-name" style="font-size: 15px;  margin: 0; padding: 0;" >Age</label>
-                <label for="Item-name" class="blocks"></label>
+                <label for="Item-name" id="ageBlock" class="blocks" style="font-size: 15px;"></label>
             </div>
         </div>
         
@@ -45,24 +53,30 @@
     
         <div class="Item-list">
             <form action="" style="margin: 15px;">
-                <label for="" style="margin-right: 90px;">Item list</label>
+                <label for="" style="margin-right: 90px;">Employee List</label>
                 <input type="search" name="" id="">
                 <input type="button" value="Search">
             </form>
 
-            
-            <div class="scroll">
-                <div class="cate">
-                    <div class="name" style="color: aliceblue;">Username</div>
-                    <div class="Price" style="color: aliceblue;">FirstName</div>
-                    <div style="color: aliceblue;">LastName</div>
-                    <div class="stock" style="color: aliceblue;">Rule</div>
-                </div>
-                <div class="roll"></div>
-            </div>
-
+            <div class="scroll" style="height: 550px; overflow:scroll;">  
+                <table class="table table-striped">
+                    <tr  class="bg-info">
+                        <th>Username</th>
+                        <th>Fullname</th>
+                        <th>Birthday</th>
+                        <th>Role</th>
+                    </tr>
+                    <tbody id="myTable">
+                        
+                    </tbody>
+                </table>
+            </div>            
         </div>
 
     </div>
+
+
+
+    <script src="/data/Employee.js"></script>
 </body>
 </html>

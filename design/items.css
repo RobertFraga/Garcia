@@ -69,15 +69,25 @@
 }
 
 /* Scrolls */
-.cate{
-    background-color: dimgrey;
-    display: flex;
-    justify-content: space-around;
+.Item-list{
+    width: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.roll{
-    background-color: rgb(227, 227, 227);
-    width: 400px;
-    height: 500px;
-    overflow: scroll;
+
+.table-striped{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 480px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
 }

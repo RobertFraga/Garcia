@@ -55,17 +55,26 @@
 
             
             <div class="scroll">
-                <div class="cate">
-                    <div class="name" style="color: aliceblue;">Name</div>
-                    <div class="Price" style="color: aliceblue;">Price</div>
-                    <div style="color: aliceblue;">Categories</div>
-                    <div class="stock" style="color: aliceblue;">Stock</div>
+                <div class="scroll" style="height: 550px; overflow:scroll;">
+                    <table class="table table-striped">
+                        <tr  class="bg-info">
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Categorie</th>
+                            <th>Stock</th>    
+                        </tr>
+                    
+                        <tbody id="myTable">
+                            
+                        </tbody>
+                    </table>
                 </div>
-                <div class="roll"></div>
             </div>
-
         </div>
 
     </div>
+
+
+    <script src="/data/itemlist.js"></script>
 </body>
 </html>

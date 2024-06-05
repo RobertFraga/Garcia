@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/navbar.css">
     <link rel="stylesheet" href="/design/transac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Transactions</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     </div>
 
     <div class="main-container">
-        <div class="Item-list">
+        <div class="Item-list" >
             <form action="" style="margin: 10px;">
                 <label for="" style="margin-right: 550px; font-weight: bolder;">Transactions Records</label>
                 <input type="search" name="" id="">
@@ -26,26 +27,29 @@
             </form>
 
             
-            <div class="scroll">
-                <div class="cate">
-                    <div class="name" style="color: aliceblue;">Transaction#</div>
-                    <div class="Price" style="color: aliceblue;">Date</div>
-                    <div class="Price" style="color: aliceblue;">Order</div>
-                    <div class="Price" style="color: aliceblue;">Employee</div>
-                    <div class="Price" style="color: aliceblue;">Quantity</div>
-                    <div class="Price" style="color: aliceblue;">Price</div>
-                    <div class="Price" style="color: aliceblue;">Total</div>
-                    <div class="Price" style="color: aliceblue;">Pay Now</div>
-                </div>
-                <div class="roll"></div>
+            <div class="scroll" style="height: 550px; overflow:scroll;">
+                <table class="table table-striped">
+                    <tr  class="bg-info">
+                        <th>Transaction#</th>
+                        <th>Date</th>
+                        <th>order</th>
+                        <th>Employee</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Pay Now</th>
+                    </tr>
+                
+                    <tbody id="myTable">
+                        
+                    </tbody>
+                </table>
             </div>
 
         </div>
     </div>
     
     
-
-
-
+    <script src="/data/tracsactions.js"></script>
 </body>
 </html>
