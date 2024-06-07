@@ -11,7 +11,7 @@
     <div class="sidenav">
         <a href="index.html" style="margin-top: 30px;">Dashboard</a>
         <a href="/dashboard-views/item.html">Items</a>
-        <a href="/dashboard-views/cathegories.html" ">Categories</a>
+        <a href="/dashboard-views/cathegories.html">Categories</a>
         <a href="/dashboard-views/Employees.html">Employees</a>
         <a href="/dashboard-views/transactions.html">Transactions</a>
         <a href="/dashboard-views/admin.html">Admin Profile</a>
@@ -39,8 +39,52 @@
 
     <div id="myChart" style="width:100%; max-width:1200px; height:500px; margin-left: 160px;"></div>
 
+    <div class="down-container">
+        <div class="labes" style="padding: 30px;">
+            <label class="l1" for="" style="font-weight: bolder;">Top Selling Item</label>
+            <label class="l2" for="" style="font-weight: bolder; color: rgb(95, 223, 70); font-size: 11px;">More Item</label>
+            
+            <label class="l3" for="" style="font-weight: bolder; ">Item Price</label>
+            <label class="l4" for="" style="font-weight: bolder; color: rgb(95, 223, 70); font-size: 11px;">More Item</label>
+        </div>
+        
+        <section>
+            <div class="boxs box1">
+                <table class="table table-striped">
+                    <tr  class="bg-info">
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Sold</th>
+                    </tr>
+                
+                    <tbody id="myTable">
+                        <!-- data come here -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="boxs box2">
+                <table class="table table-striped">
+                    <tr  class="bg-info">
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+    
+                    <tbody id="myTab">
+                        <!-- data come here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <script src="index.js">
-    </script>
+
+        
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="/data/solds.js"></script>
+    <script src="/data/prices.js"></script>
 </body>
 </html>

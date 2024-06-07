@@ -1,6 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .sidenav {
@@ -58,4 +58,50 @@ body {
   display: flex; 
   flex-direction: column; 
   justify-content: space-evenly;
+}
+
+
+.down-container{
+  margin-top: 200px;
+  margin-left: 200px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.table-striped{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.boxs{
+  border: solid 1px;
+  border-radius: 10px;
+  overflow-x: hidden;
+  height: 600px;
+}
+
+section{
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+.l1{
+  margin-left: 30px;
+  margin-right: 200px;
+}
+.l3{
+  margin-left: 150px;
+  margin-right: 200px;
 }
