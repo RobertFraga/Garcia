@@ -36,11 +36,39 @@ var mylist = [
     }
 ]
 
+
+$('#item-search').on('keyup', function(){
+    var value = $(this).val()
+    console.log('Value', value)
+
+    var data = searchTable(value, mylist)
+    buildTable(data)
+})
+
+function searchTable(value, data){
+    var fillteredData = []
+
+    for(var i = 0; i < data.length; i++){
+        value = value.toLowerCase()
+        var name = data[i].Name.toLowerCase()
+
+
+        if(name.includes(value)){
+            fillteredData.push(data[i])
+        }
+    }
+    return fillteredData
+}
+
+
+
 buildTable(mylist)
 
 
 function buildTable(data){
     var table = document.getElementById('myTable')
+
+    table.innerHTML = ''
 
     for (var i = 0; i < data.length; i++){
         var row = `<tr>

@@ -71,6 +71,28 @@ var employees = [
     }
 ]
 
+$('#emp-search').on('keyup', function(){
+    var value = $(this).val()
+    console.log('Value', value)
+
+    var data = searchTable(value, employees)
+    buildTable(data)
+})
+
+function searchTable(value, data){
+    var fillteredData = []
+
+    for(var i = 0; i < data.length; i++){
+        value = value.toLowerCase()
+        var name = data[i].lastname.toLowerCase()
+
+
+        if(name.includes(value)){
+            fillteredData.push(data[i])
+        }
+    }
+    return fillteredData
+}
 
 
 buildTable(employees)
@@ -78,6 +100,8 @@ buildTable(employees)
 
 function buildTable(data){
     var table = document.getElementById('myTable')
+
+    table.innerHTML = ''
 
     for (var i = 0; i < data.length; i++){
         var row = `<tr>

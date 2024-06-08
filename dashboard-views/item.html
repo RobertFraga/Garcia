@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/navbar.css">
     <link rel="stylesheet" href="/design/items.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Items</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         
         <div class="Item-details">
             <div class="con1">
-                <label for="">Item Details</label>
+                <label>Item Details</label>
                 <div class="item-box"></div>
                 <button class="select">Select</button>
             </div>
@@ -47,11 +48,11 @@
     
     
         <div class="Item-list">
-            <form action="" style="margin: 10px;">
-                <label for="" style="margin-right: 90px;">Item list</label>
-                <input type="search" name="" id="">
+            <div style="margin: 10px;">
+                <label style="margin-right: 90px;">Item list</label>
+                <input type="text" id="item-search">
                 <input type="button" value="Search">
-            </form>
+            </div>
 
             
             <div class="scroll">
